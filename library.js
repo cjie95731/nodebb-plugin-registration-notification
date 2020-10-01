@@ -76,7 +76,7 @@ function sendNotification(data) {
 		} else {
 			// No match, send notification
 			notifications.create({
-				bodyShort: 'A user by the name of ' + data.user.username + ' has registered',
+				bodyShort: '用户名为@' + data.user.username + ' 已经注册啦！',
 				bodyLong: '',
 				image: data.user.picture,
 				nid: 'plugin:registration-notification:' + Date.now(),
